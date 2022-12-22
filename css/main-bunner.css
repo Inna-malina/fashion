@@ -1,0 +1,138 @@
+.main-bunner {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-bunner__wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.main-bunner__left {
+    width: 50%;
+}
+
+.main-bunner__right {
+    width: 50%;
+}
+
+.main-bunner__one,
+.main-bunner__two,
+.main-bunner__three {
+    display: flex;
+    align-items: center;
+
+}
+
+.main-bunner__one {
+    position: relative;
+    background: url('../images/main-bunner/bunner-1.jpg');
+    width: 100%;
+    height: 50vh;
+    padding: 37px 45px;
+    background-size: cover;
+    box-sizing: border-box;
+
+}
+
+.main-bunner__two {
+    position: relative;
+    background: url('../images/main-bunner/bunner-2.jpg');
+    width: 100%;
+    height: 50vh;
+    padding: 37px 45px;
+    background-size: cover;
+    box-sizing: border-box;
+
+}
+
+.main-bunner__three {
+    position: relative;
+    background: url('../images/main-bunner/bunner-3.jpg');
+    width: 100%;
+    height: 100vh;
+    padding: 37px 45px;
+    background-size: cover;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    position: absolute;
+    font-family: var(--right);
+    font-weight: 400;
+    font-size: 40px;
+    color: #FF76B0;
+    top: 37px;
+}
+
+.main-bunner__text-container {
+    position: relative;
+    width: 70%;
+    left: 0px;
+
+}
+
+.main-bunner__title {
+    font-family: var(--patt);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 44px;
+    color: #FFFFFF;
+
+}
+
+.title-left {}
+
+.text-container-right {
+    width: 86%;
+}
+
+.title-right {
+    font-size: 3rem;
+    line-height: 67px;
+    animation: visible 2s ease 2s both;
+    -webkit-animation: visible 2s ease 2s both;
+}
+
+.text-right {
+    font-family: var(--os);
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 25px;
+    color: #FFFFFF;
+    animation: visible 2s ease 3s both;
+    -webkit-animation: visible 2s ease 3s both;
+}
+
+.main-bunner__one .main-bunner__text-container {
+    animation: move 0.8s cubic-bezier(.66, .84, .53, 1.35) 0.2s both;
+    -webkit-animation: move 0.8s cubic-bezier(.66, .84, .53, 1.35) 0.2s both;
+}
+
+.main-bunner__two .main-bunner__text-container {
+    animation: move 0.8s cubic-bezier(.66, .84, .53, 1.35) 0.8s both;
+    -webkit-animation: move 0.8s cubic-bezier(.66, .84, .53, 1.35) 0.8s both;
+}
+
+@keyframes move {
+    from {
+        left: -1000px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        ;
+    }
+}

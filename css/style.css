@@ -1,0 +1,45 @@
+@import './menu.css';
+@import './main-bunner.css';
+@import './about-me/1-about-me-box.css';
+@import './about-me/2-about-me-img.css';
+@import './about-me/3-about-me-descr.css';
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    behavior: smooth;
+    font-size: 16px;
+}
+
+p {
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.center {
+  width: 70%;
+  margin: 0px auto;
+}
+
+:root {
+    --orange: rgba(236, 136, 19, 0.8);
+    --pink: rgba(255, 118, 176, 0.8);
+    --green: rgba(199, 195, 49, 0.8);
+    --blue: rgba(24, 168, 224, 0.8);
+    --ma: 'Montserrat Alternates', sans-serif;
+    --os: 'Open Sans', sans-serif;
+    --patt: 'Pattaya', sans-serif;
+    --right: 'Righteous', cursive;
+}

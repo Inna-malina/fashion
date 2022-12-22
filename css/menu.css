@@ -1,0 +1,88 @@
+.burger-menu, .burger-close {
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+    right: 45px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+}
+
+.burger-menu:hover {
+    color: rgba(255, 118, 176);
+}
+
+.burger-close:hover {
+    color: rgba(255, 118, 176);
+}
+
+nav {
+    position: fixed;
+    top: 15%;
+    z-index: 200;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.nav-list__wrapper {
+    background: var(--pink);
+    border-left: 15px solid rgba(255, 118, 176);
+    border-radius: 10px;
+}
+
+.nav-item {
+    background: white;
+    padding: 20px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.nav-item a {
+    color: rgba(255, 118, 176);
+    font-family: var(--os);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    background: var(--pink);
+}
+
+.nav-item:hover a {
+    color: white;
+
+}
+
+.burger-active, .close-active {
+    opacity: 1;
+    display: block;
+}
+
+.burger-disactive, .close-disactive {
+    opacity: 0;
+    display: none;
+}
+
+.menu-active {
+    right: 0px;
+}
+
+.menu-disactive {
+    right: -100%;
+}
