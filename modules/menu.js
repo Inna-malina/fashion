@@ -1,6 +1,7 @@
 let burgerClose = document.querySelector('.burger-close');
 let burger = document.querySelector('.burger-menu');
 let burgerMenu = document.querySelector('nav');
+let burgerList = document.querySelector('.nav-list__wrapper');
 
 burger.addEventListener('click', function () {
   console.log('qwerqwerqwer');
@@ -30,6 +31,13 @@ let mainBunnerHeight = window.getComputedStyle(mainBunner).height;
 
 window.addEventListener('scroll', function () {
   if (window.pageYOffset >= mainBunner.scrollHeight) {
-    console.log('a');
+    burger.classList.add('pink');
+    burgerClose.classList.add('pink');
+    burgerList.classList.add('shadow');
+  }
+  else{
+    burger.classList.remove('pink');
+    burgerClose.classList.remove('pink');
+    burgerList.classList.remove('shadow');
   }
 });
