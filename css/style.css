@@ -3,6 +3,7 @@
 @import './about-me/1-about-me-box.css';
 @import './about-me/2-about-me-img.css';
 @import './about-me/3-about-me-descr.css';
+@import './services/service-container.css';
 
 
 * {
